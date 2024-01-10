@@ -3,7 +3,7 @@ import React, {JSX, useState} from "react";
 import {useQuery} from "@tanstack/react-query";
 function App() {
     const state = useTestStore();
-    const [inputNumber, setInputNumber] = useState("0");
+    const [inputNumber, setInputNumber] = useState<string>("0");
     const increaseCount: React.MouseEventHandler<HTMLButtonElement> = (): void => {
         state.increaseCount();
     }
